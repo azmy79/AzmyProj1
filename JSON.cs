@@ -204,20 +204,7 @@ namespace CodeArt.Text
             sb.Append("]");
         }
 
-        public static string GetCode(object value)
-        {
-            StringBuilder sb = new StringBuilder();
-            try
-            {
-                WriteValue(sb, value);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
 
-            return sb.ToString();
-        }
 
     }
 }
